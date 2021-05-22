@@ -3,7 +3,7 @@ import discord
 import openpyxl
 # noinspection PyUnresolvedReferences
 import time
-
+import os
 client = discord.Client()
 
 @client.event
@@ -514,5 +514,5 @@ async def on_message(message):
 
 
 
-
-client.run("NzgxODk2NzYzMjQxNzkxNTQw.X8EUGw.Xon75AJrAYQJ9Egg3adDFOZw_og")
+access_Token = os.environ["BOT_TOKEN"]
+client.run(access_Token)
